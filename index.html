@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine?</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Outfit:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+    <div class="background-animation"></div>
+    <div class="floating-hearts">
+        <span>❤️</span> <span>💖</span> <span>💕</span> <span>💓</span>
+        <span>💗</span> <span>💘</span> <span>💝</span> <span>💟</span>
+        <span>❤️</span> <span>💖</span> <span>💕</span> <span>💓</span>
+        <span>💗</span> <span>💘</span> <span>💝</span> <span>💟</span>
+    </div>
+
+    <main class="container">
+        <div class="glass-card">
+            <div class="content">
+                <div class="photo-frame">
+                    <img src="background.jpg" alt="Us" class="memory-photo">
+                    <div class="heart-overlay">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                        </svg>
+                    </div>
+                </div>
+                <h1 class="title">Will you be my Valentine?</h1>
+                <p class="subtitle">I promise to buy you chocolates and never steal your fries (often).</p>
+
+                <div class="button-group">
+                    <button id="yesBtn" class="btn btn-primary">Yes, absolutely! 💖</button>
+                    <button id="noBtn" class="btn btn-secondary">No 💔</button>
+                </div>
+            </div>
+
+            <div id="success-message" class="hidden">
+                <h2 class="success-title">Yay! Best Day Ever! 🎉</h2>
+                <p>See you on the 14th! ❤️</p>
+                <div class="cute-gif">
+                    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGIwZHI1bTJ4aXZoZnFqa3B4aXZoZnFqa3B4aXZoZnFqa3B4aXZoZnFqa3B4eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26BRv0ThflsHCqDrG/giphy.gif"
+                        alt="Happy Cat" />
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
