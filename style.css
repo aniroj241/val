@@ -579,77 +579,94 @@ body {
 }
 
 /* Mobile Responsiveness */
-@media (max-width: 600px) {
+/* Mobile Responsiveness */
+@media (max-width: 480px) {
     body {
-        overflow-y: auto;
-        /* Allow scrolling on small screens */
-        height: auto;
         min-height: 100vh;
-        padding: 20px 0;
+        height: auto;
+        overflow-y: scroll;
+        /* Force scroll capability */
+        display: block;
+        /* Remove flex centering constraint */
+        padding: 0;
     }
 
     .container {
         padding: 10px;
+        width: 100%;
         max-width: 100%;
-        margin-top: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+        /* Ensure container fills screen */
     }
 
     .glass-card {
         padding: 1.5rem 1rem;
-        border-radius: 25px;
-        margin: 10px;
+        border-radius: 20px;
+        margin: 10px 0 20px 0;
+        /* Add bottom margin for scroll space */
+        width: 100%;
+        max-width: 360px;
+        /* Constrain width */
     }
 
     .date-badge {
-        font-size: 0.8rem;
-        padding: 6px 12px;
+        font-size: 0.75rem;
+        padding: 4px 10px;
         margin-bottom: 1rem;
     }
 
     .photo-frame {
-        width: 180px;
-        /* Much smaller for mobile */
-        height: 180px;
-        margin: 0.5rem auto 1.5rem;
+        width: 140px;
+        /* Even smaller */
+        height: 140px;
+        margin: 0.5rem auto 1rem;
         border-width: 4px;
     }
 
     .title {
-        font-size: 2rem;
-        /* Significantly smaller */
-        margin-bottom: 0.5rem;
+        font-size: 1.8rem;
+        /* Fit on one line if possible */
+        margin-bottom: 0.2rem;
+        line-height: 1.1;
     }
 
     .subtitle.question {
-        font-size: 1.2rem;
-        margin-bottom: 1.5rem;
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
     }
 
     .promises-container {
-        padding: 1rem;
-        margin-bottom: 1.5rem;
+        padding: 0.8rem;
+        margin-bottom: 1.2rem;
     }
 
     .promise-title {
-        font-size: 0.9rem;
-    }
-
-    .promises-list li {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
         margin-bottom: 0.5rem;
     }
 
-    .btn {
-        padding: 12px 24px;
-        font-size: 1rem;
-        width: 100%;
-        max-width: 100%;
+    .promises-list li {
+        font-size: 0.8rem;
+        margin-bottom: 0.4rem;
+        padding: 0;
     }
 
     .button-group {
+        display: flex;
         flex-direction: column;
-        gap: 0.8rem;
-        align-items: center;
+        gap: 10px;
         width: 100%;
+        padding-bottom: 10px;
+        /* Ensure space at bottom */
+    }
+
+    .btn {
+        width: 100%;
+        padding: 12px 20px;
+        font-size: 1rem;
     }
 }
