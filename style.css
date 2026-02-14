@@ -253,7 +253,8 @@ body {
     /* Increased from 240px */
     height: 280px;
     /* Increased from 240px */
-    margin: 0 auto 3rem;
+    margin: 1rem auto 3rem;
+    /* Adjusted top margin */
     border-radius: 50px;
     /* Modern Squircle look */
     border: 8px solid rgba(255, 255, 255, 0.9);
@@ -339,12 +340,28 @@ body {
     }
 }
 
+/* New Elements Styling */
+.date-badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.9);
+    color: var(--primary-color);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transform: rotate(-2deg);
+    border: 1px solid var(--primary-color);
+}
+
 .title {
     font-family: 'Dancing Script', cursive;
-    font-size: 3.5rem;
+    font-size: 3rem;
+    /* Slightly smaller to fit "Happy Valentine's Day" */
+    line-height: 1.2;
     background: -webkit-linear-gradient(45deg, #ff3366, #ff6b81);
     background-clip: text;
-    /* standard property */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 0.5rem;
@@ -353,22 +370,54 @@ body {
     background-size: 200% auto;
 }
 
-@keyframes shimmer {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    100% {
-        background-position: 100% 50%;
-    }
-}
-
-.subtitle {
+.subtitle.question {
+    font-family: 'Outfit', sans-serif;
     color: #4a4a4a;
-    font-size: 1.2rem;
-    margin-bottom: 2.5rem;
-    font-weight: 500;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
 }
+
+.promises-container {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    padding: 1.5rem;
+    margin-bottom: 2.5rem;
+    text-align: left;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.promise-title {
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.promises-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.promises-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 0.8rem;
+    font-size: 1.05rem;
+    color: #2d3436;
+}
+
+.promises-list li span {
+    font-size: 1.2rem;
+}
+
+/* Original subtitle removed/replaced */
 
 .button-group {
     display: flex;
